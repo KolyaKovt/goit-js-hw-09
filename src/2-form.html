@@ -5,11 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 3</title>
+    <script src="./js/2-form.js" type="module" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/2-form.css" />
   </head>
   <body>
     <section>
-      <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 3</h1>
+      <h1 class="visually-hidden">Feedback form</h1>
+      <form class="feedback-form" autocomplete="off">
+        <label class="feedback-label">
+          <span class="label-span">
+            Email
+          </span>
+          <input class="input form-field" type="email" name="email" autofocus />
+        </label>
+        <label class="feedback-label textarea-label">
+          <span class="label-span">
+            Message
+          </span>
+          <textarea
+            class="textarea form-field"
+            name="message"
+            rows="8"
+          ></textarea>
+        </label>
+        <button class="button" type="submit">Submit</button>
+      </form>
     </section>
   </body>
 </html>
